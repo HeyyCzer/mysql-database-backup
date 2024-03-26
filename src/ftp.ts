@@ -1,5 +1,7 @@
 import { Client as FTPClient } from "basic-ftp";
-import config from "./config";
+import config from "../config.json";
+
+config as Config;
 
 async function connect() {
 	const client = new FTPClient();

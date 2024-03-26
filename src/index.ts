@@ -1,7 +1,12 @@
 import "source-map-support/register";
 
 import * as cron from "node-cron";
-import config from "./config";
+
+// Validate config
+import config from "../config.json";
+
+config as Config;
+
 import { dumpDatabase } from "./database";
 import { connect as connectFtp } from "./ftp";
 

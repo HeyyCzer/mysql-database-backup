@@ -1,5 +1,7 @@
 import mysqldump from 'mysqldump';
-import config from './config';
+import config from "../config.json";
+
+config as Config;
 
 async function dumpDatabase() {
 	try {
