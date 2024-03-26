@@ -1,0 +1,30 @@
+{
+  "name": "mysql-database-backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "build-and-run": "tsc && node dist/index.js",
+    "dev": "nodemon -e ts --exec \"pnpm build-and-run\"",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^5.0.5",
+    "cron-parser": "^4.9.0",
+    "luxon": "^3.4.4",
+    "mysqldump": "^3.2.0",
+    "node-cron": "^3.0.3",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^20.11.30",
+    "@types/node-cron": "^3.0.11",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.3"
+  }
+}
